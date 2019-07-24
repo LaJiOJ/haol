@@ -1,5 +1,4 @@
-# Coursera Test
+# My Personal Home Page
 ## Intro
 
-- This is an coursera test for "html-css-javascript-for-web-developers" coursera course
-- You can see my current web page at [Hao Lin's Home Page](https://lajioj.github.io/coursera-test/site/)
+- You can see my current web page at [Hao Lin's Home Page](https://lajioj.github.io/My-Home-Page/site/)
