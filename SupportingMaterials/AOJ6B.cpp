@@ -10,14 +10,14 @@ const int MAX_VERTICES = 10000;
 enum Color { WHITE, GRAY, BLACK };
 enum BiColor { RED, BLUE };
 extern bool FindMatch();
-struct Vertex {
+struct Vertex {//def vertex
 	int color;
 	int biparititeColor;
 	int discoverTime;
 	int back;
 };
-vector<int>edge[MAX_VERTICES];//the adjacency List
-vector<Vertex>vertex;
+vector<int>edge[MAX_VERTICES];//the adjacency list
+vector<Vertex>vertex;//def all nodes
 queue<int>queNode;
 
 int main() {
@@ -32,7 +32,7 @@ int main() {
 	bool flag = true;
 	unsigned i;
 	unsigned j;
-	while (getline(cin, inStr)) {
+	while (getline(cin, inStr)) {// read
 		flag = true;
 		i = 0;
 		j = 0;
@@ -65,6 +65,7 @@ int main() {
 }
 
 bool FindMatch() {
+	// function: judge whether G is biparitite graph
 	vertex[0].color = GRAY;
 	vertex[0].biparititeColor = RED;
 	queNode.push(0);
